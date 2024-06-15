@@ -1,0 +1,127 @@
+@import "https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap";
+@import "https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200";
+
+:root{
+    --primary: #9500ae;
+    --secondary: #dd33fa;
+}
+
+*{
+    user-select: none;
+    font-family: Nunito;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    height: 100vh;
+}
+
+.app{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.header{
+    margin: 0px;
+    width: 100%;
+    height: 70px;
+    background: var(--primary);
+    box-shadow: 0px 8px 32px 0px rgba(0, 0, 0, 0.3);
+    display: flex;
+    align-items: center;
+}
+
+.headerTitle{
+    margin: 0px 30px;
+    color: #fff;
+}
+
+.content{
+    width: 100%;
+    display: flex;
+    flex-grow: 1;
+    justify-content: center;
+}
+
+.chatBox{
+    align-self: center;
+    width: 800px;
+    max-width: 95%;
+    height: 90%;
+    background: #fff;
+    box-shadow: 0px 4px 16px 0px rgba(0, 0, 0, 0.3);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 10px;
+}
+
+.chatHeader{
+    width: 100%;
+    height: 70px;
+    background: var(--primary);
+    box-shadow: 0px 2px 8px 0px rgba(0, 0, 0, 0.3);
+    border-radius: 10px 10px 0px 0px;
+}
+
+.chatBody{
+    width: 100%;
+    display: flex;
+    flex-grow: 1;
+}
+
+.chatInputBox{
+    width: 100%;
+    height: 70px;
+    box-shadow: 0px 2px 8px 0px rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.chatInput{
+    width: 90%;
+    border: 0px solid var(--primary);
+    border-radius: 0px 0px 0px 10px;
+    box-shadow: inset 0px 4px 8px 0px rgba(0, 0, 0, 0.3);
+    outline: none;
+    display: flex;
+    font-size: 20px;
+    padding: 0px 20px;
+}
+
+.chatSendButton{
+    width: 100px;
+    flex-grow: 100%;
+    border: 0px solid var(--primary);
+    border-left: 0px;
+    border-radius: 0px 0px 10px 0px;
+    box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.3);
+    background: var(--primary);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.chatSendButton:hover{
+    filter: brightness(1.2);
+}
+
+.chatSendButton:active{
+    filter: brightness(0.8);
+}
+
+.chatSendIcon{
+    color: #fff;
+    font-variation-settings: "FILL" 1;
+    font-size: 32px;
+}
