@@ -1,6 +1,6 @@
 # SiliChat
 
-## A simple room-based real-time chat application created using React and Firebase.
+## A room-based realtime chat application with public chat rooms, private chat room creation and joining options, spam prevention and word filtering.
 
 ### Check out live version @ https://silichat.pages.dev/
 ### Run locally
